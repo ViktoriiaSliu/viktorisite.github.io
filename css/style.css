@@ -49,6 +49,26 @@ h1 {
     text-transform: uppercase;
     color: #1085e4;
 }
+.btn-fix {
+    display: block;
+    border: 1px solid rgba(118, 114, 114, 0.49);
+    background-position: 0 0;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 99999;
+}
+.btn-fix svg {
+    width: 40px;
+    height: auto;
+    position: fixed;
+    right: 22px;
+    bottom: 32px;
+}
+
 .page-stat .title-h2, .page-screen .title-h2 {
     text-align: center;
     margin: 0 auto;
