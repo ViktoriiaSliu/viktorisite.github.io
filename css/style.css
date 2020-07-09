@@ -240,6 +240,7 @@ h1 {
     font-size: 35px;
     color: #6e7ea9;
     opacity: 0.2;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 .btn-close:hover {
@@ -263,6 +264,7 @@ h1 {
     background-color: #fff;
     border: 1px solid #f1f1f1;
     padding: 30px 15px 45px 15px;
+    -webkit-box-shadow: 0 5px 6px #f4f4f4;
     box-shadow: 0 5px 6px #f4f4f4;
     border-radius: 10px;
 }
@@ -577,6 +579,7 @@ a.video-app {
     justify-content: space-around;
     margin-top: 76px;
     padding: 0;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .list-stat>li {
@@ -609,6 +612,7 @@ a.video-app {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 83px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .box-price .btn-primary {
@@ -750,6 +754,7 @@ a.video-app {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 63px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .box-clients-item {
@@ -805,6 +810,7 @@ a.video-app {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 140px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .box-team-item {
@@ -817,6 +823,7 @@ a.video-app {
     padding: 193px 31px 42px 31px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .box-team-item .position {
@@ -840,6 +847,7 @@ a.video-app {
     left: 0;
     right: 0;
     margin: 0 auto;
+    -ms-flex-preferred-size: 31.5%;
     flex-basis: 31.5%;
 }
 .box-team-item .btn-team {
@@ -1080,6 +1088,7 @@ a.video-app {
     -ms-flex-align: center;
     align-items: center;
     list-style-type: none;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .social>li {
@@ -1244,9 +1253,12 @@ a.video-app {
         background-image: none;
     }
     .page-softwere-flex {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
     .page-softwere-flex>div {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
     .page-softwere-list {
@@ -1269,8 +1281,15 @@ a.video-app {
         margin: 0 auto 45px;
     }
     .btn-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
         max-width: 300px;
@@ -1294,6 +1313,8 @@ a.video-app {
     .flex-analytics, .flex-app2 {
         width: 100%;
         text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 0 auto;
     }
@@ -1373,6 +1394,7 @@ a.video-app {
         display: none;
     }
     .flex-form>div {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         text-align: center;
     }
@@ -1381,6 +1403,8 @@ a.video-app {
     }
     .contact-form {
         max-width: 800px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 0 auto;
     }
@@ -1397,7 +1421,12 @@ a.video-app {
         padding: 81px 0 0 0;
     }
     .box-team {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
         flex-flow: column wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin: 0 auto;
         width: 300px;
@@ -1423,6 +1452,7 @@ a.video-app {
         margin: 0 auto;
     }
     .box-price-item {
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
         margin-bottom: 0;
         
@@ -1436,6 +1466,7 @@ a.video-app {
         margin-top: 20px;
     }
     .box-clients {
+        -ms-flex-pack: distribute;
         justify-content: space-around;
         margin-bottom: 10px;
     }
@@ -1449,6 +1480,7 @@ a.video-app {
         display: none;
     }
     .list-stat>li {
+        -ms-flex-preferred-size: 34%;
         flex-basis: 34%;
         margin-bottom: 30px;
     }
@@ -1485,6 +1517,8 @@ a.video-app {
     .page-our{
         text-align: center;
         margin: 0 auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
@@ -1493,6 +1527,8 @@ a.video-app {
     grid-template-columns: 175px 175px;
     }
     .list-company {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
     .page-subscribe {
